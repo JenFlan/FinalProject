@@ -1,0 +1,12 @@
+h1 {
+	color: red;
+}
+.main-nav {
+	background-color: yellow;
+}
+div {
+	width: 100%;
+	border: 1px;
+	border-color: purple;
+	display: inline-block;
+}

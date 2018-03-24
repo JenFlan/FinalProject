@@ -12,13 +12,15 @@ A comprehensive list of international education conferences in one location for 
 
 Eventually, to be a mobile app or form that can be cached on a phone for easy note taking and photos to be uploaded once online again. Think: Evernote
 
+For the class portion, I'd be interested to create the overall flow, like 4-5 pages, but only build out the homepage, the page with the table & links to Global Conferences and the portion on how to create a new trip including the related form that would have customized fields describing the destination. Is that realistic? 
+
 Home page for SmartSites - public, all others would require login
 
 Page called: Global Conferences List for 2018
-This page would have a table of global conferences, dates, and locations that could be sorted by conference name, date and location.
+This page would have a table of links to global conferences, dates, and locations that could be sorted by conference name, date and location.
 
 Page called: Map My Travel
-This would be the Control Panel for mapping  & reporting trips. 
+This would be the Control Panel or DashBoard for mapping  & reporting trips. 
 My Trips – see a list of all my trips
 Create New Trip – select stops in an itinerary from the list of conferences, list of existing partners, or add a new destination.
 Upload list of partners – members can upload a list of partners that would be stored in a database. 

@@ -12,6 +12,18 @@ A comprehensive list of international education conferences in one location for 
 
 Eventually, to be a mobile app or form that can be cached on a phone for easy note taking and photos to be uploaded once online again. Think: Evernote
 
+Three examples that exist for personal travel, thus a model for this site:
+www.travellerspoint.com
+www.tripline.net
+www.triphappy.com
+
+Professional travel planning:
+http://mapanything.com/products/mapanything-for-salesforce - I’ve used this as a sales manager but you have to have SalesForce
+https://technolutions.com/ product Slate used by Admissions has some travel planning features
+It’s possible Ellucian/Recruit CRM has a travel planning component
+https://www.roadwarriorllc.com/ and https://blog.route4me.com/2017/02/mad-max-road-warrior-route-planner/ both seem to be for driving road warriors
+
+
 For the class portion, I'd be interested to create the overall flow, like 4-5 pages, but only build out the homepage, the page with the table & links to Global Conferences and the portion on how to create a new trip including the related form that would have customized fields describing the destination. Is that realistic? 
 
 Home page for SmartSites - public, all others would require login

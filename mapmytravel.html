@@ -16,5 +16,85 @@
 			<p>RMIT Univ     Melbourne, VIC  Australia  Expired</p>
 		</section>
 		<a href="https://www.tripline.net/">Create a New Itinerary</a>
+
+
+			<p>Form goes here to enter travel locations into box which then generates map with locations, and lines connecting the journey.</p>
+
+			<p>
+			Has cards or a form for each location entered where user can store information about each location, things to remember like name of institution, department, contact phone number, agreement type, and exchange balance.
+			</p>
+
+			
+			<form action="/action_page.php">
+				  <fieldset>
+				    <legend>Site Visit Trip Planner</legend>
+				    Trip Name:<br>
+				    <input type="text" name="tripname">
+				    <br>
+				    Start Date:<br>
+				    <input type="text" name="startdate">
+				    <br>
+				    End Date:<br>
+				    <input type="text" name="enddate">
+				    Conference Attending:<br>
+				    <select name="conferencename">
+				    	<option value="nafsa">NAFSA</option>
+				    	<option value="eaie">EAIE</option>
+				    	<option value="forumusa">The Forum on Education Abroad USA</option>
+				    	<option value="forumusa">The Forum on Education Abroad Europe</option>
+				    	<option value="apaie">APAIE</option>
+				    	<option value="nafsa">CBIE</option>
+				    </select>
+				    <br><br>
+				    <input type="submit" value="Submit">
+				  </fieldset>
+			</form>
+
+
+
+			</form>
+
+
+			<p>a map should be appearing here but it is not. Boo. :(</p>
+			<div id="map"></div>
+
+			<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu_j82gzPDTOB4kqZI5nnT9fPm4jWHclY&callback=initMap">
+			</script>
+
+			<script src="javascript/app.js"></script>
+
+
+
 	</body>
 </html>
+
+
+
+
+<!-- from Google API tutorial but didn't work
+
+	   <h3>My Google Maps Demo</h3>
+    <div class="map"></div>
+
+	    <script>
+	      function initMap() {
+	        var uluru = {lat: -25.363, lng: 131.044};
+	        var map = new google.maps.Map(document.getElementById('map'), {
+	          zoom: 4,
+	          center: uluru
+	        });
+	        var marker = new google.maps.Marker({
+	          position: uluru,
+	          map: map
+	        });
+	      }
+	    </script>
+    -->
+
+
+
+
+
+
+

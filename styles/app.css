@@ -4,9 +4,13 @@ h1 {
 .main-nav {
 	background-color: yellow;
 }
-div {
+.nav-link {
+	color: green;
+	font-size: 15px;
+}
+
+
+.map {
+	height: 400px;
 	width: 100%;
-	border: 1px;
-	border-color: purple;
-	display: inline-block;
 }

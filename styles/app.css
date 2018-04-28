@@ -1,16 +1,36 @@
-h1 {
-	color: red;
+body {
+	padding: 30px;
 }
-.main-nav {
-	background-color: yellow;
+
+.full {
+	padding: 0px;
 }
-.nav-link {
-	color: green;
-	font-size: 15px;
+
+.jumbotron-container {
+	background-image: url(assets/world-collage-1400x500.png);	
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.card-container {
+	display: flex;
+	box-sizing: border-box;
+	padding: 20px;
 }
 
 
-.map {
-	height: 400px;
-	width: 100%;
+
+
+
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	box-sizing: border-box;
 }
+
+
+
+	padding: 20px;
+

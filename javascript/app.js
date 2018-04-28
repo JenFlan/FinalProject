@@ -10,6 +10,14 @@ function initMap() {
     center: new google.maps.LatLng(2.8,-187.3),
     mapTypeId: 'terrain'
   });
+/*
+$(document).ready( function () {
+    $('#table_id').DataTable();
+} );
+*/
 
-
-
+$(document).ready(function() {
+    $('#example').DataTable( {
+        "order": [[ 3, "desc" ]]
+    } );
+} );

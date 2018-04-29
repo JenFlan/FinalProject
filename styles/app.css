@@ -7,10 +7,48 @@ body {
 }
 
 .jumbotron-container {
-	background-image: url(assets/world-collage-1400x500.png);	
+	background-image: url(../assets/world-collage-1400x500.png);	
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+
+.jumbotron {
+	background-color: transparent;
+}
+
+.jumbotron h1.display-4 {
+	color: red;
+}
+
+.jumbotron p.lead {
+	color: red;
+}
+
+.confremindcontain {
+	color: red;
+	font-size: 20px;
+	text-align: right;
+	padding: 10px 20px 20px 40px;
+}
+
+.confremindform {
+
+}
+
+.confremindbtn {
+
+}
+
+.hidden {
+	display: none;
+}
+
+.sponsorupdate {
+	color: red;
+	font-size: 20px;
+	text-align: right;
+	padding: 10px 20px 20px 40px;
 }
 
 .card-container {
@@ -32,5 +70,12 @@ body {
 
 
 
-	padding: 20px;
+From Courtney Hoskins to Everyone: (09:00 AM)
+body .jumbotron-container .jumbotron .container h1.display-4 {
+From Courtney Hoskins to Everyone: (09:38 AM)
+div class="bootswatch-column"
+div class="bootswatch-column purple"
+.bootswatch-column.purple {
+
+/*	padding: 20px; */
 

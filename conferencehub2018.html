@@ -8,14 +8,20 @@
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-		<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.0/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-kCsv8pSAWtRge/+zcLDeqwoWhTQSUX2esQPYOsocgrg1eMj7T2wrTJP348T3mpBU" crossorigin="anonymous">"
+		<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.0/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-kCsv8pSAWtRge/+zcLDeqwoWhTQSUX2esQPYOsocgrg1eMj7T2wrTJP348T3mpBU" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
 
 		<link rel="stylesheet" type="text/css" href="styles/app.css">
+
 	</head>
 
 
 	<body>
-		<header class="full">
+
+
+
+	<header class="full">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 		  <a class="navbar-brand" href="#">Navbar</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,250 +56,384 @@
 	</header>
 
 	<section>
+
+		<div class="confremindcontain"> Sign up for important conference reminders.
+
+			<button type="button" class="btn btn-warning confremindbtn">Remind Me</button>
+
+			<form class="confremindform hidden">
+			  <fieldset>
+			    <legend>Legend</legend>
+			    <div class="form-group row">
+			      <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+			      <div class="col-sm-10">
+			        <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com">
+			      </div>
+			    </div>
+			    <div class="form-group">
+			      <label for="exampleInputEmail1">Email address</label>
+			      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			    </div>
+			    <div class="form-group">
+			      <label for="exampleInputPassword1">Password</label>
+			      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			    </div>
+			    <div class="form-group">
+			      <label for="exampleSelect1">Example select</label>
+			      <select class="form-control" id="exampleSelect1">
+			        <option>1</option>
+			        <option>2</option>
+			        <option>3</option>
+			        <option>4</option>
+			        <option>5</option>
+			      </select>
+			    </div>
+			    <div class="form-group">
+			      <label for="exampleSelect2">Example multiple select</label>
+			      <select multiple="" class="form-control" id="exampleSelect2">
+			        <option>1</option>
+			        <option>2</option>
+			        <option>3</option>
+			        <option>4</option>
+			        <option>5</option>
+			      </select>
+			    </div>
+			    <div class="form-group">
+			      <label for="exampleTextarea">Example textarea</label>
+			      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+			    </div>
+			    <div class="form-group">
+			      <label for="exampleInputFile">File input</label>
+			      <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+			      <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+			    </div>
+			 </form>
+		</div>
+
+	
+		<div class="sponsorupdate">
+			Need to update your organization's event details?
+			<button type="button" class="btn btn-info sponsorupdatebtn">Sponsor Update</button>
+
+
+		</div>
+
+
+
 		<h1>Conference Hub 2018</h1>
 		
 
-			<table>
-				<tr>
-					<th>Month</th>
-					<th>Date Start</th>
-					<th>Time Start</th>
-					<th>Date End</th>
-					<th>Time End</th>
-					<th>Point on Map</th>
-					<th>Conference Name</th>
-					<th>City</th>
-					<th>State/Province</th>
-					<th>Country</th>
-					<th>Conference Venue</th>
-					<th>Accommodation</th>
-					<th>Early Reg Ends</th>
-					<th>Proposals Deadline</th>
-					<th>Exhibitors/Sponsors</th>
-				</tr>
+			<table id="example" class="display">
+				<thead>
+					<tr>
+						<th>Month</th>
+						<th>Start Date</th>
+						<th>End Date</th>
+						<th>Point on Map</th>
+						<th>Conference Name</th>
+						<th>City</th>
+						<th>State/Province</th>
+						<th>Country</th>
+						<th>Conference Venue</th>
+						<th>Accommodation</th>
+						<th>Early Reg Ends</th>
+						<th>Proposals Deadline</th>
+						<th>2019 Dates</th>
+						<th>2019 Location</th>
+					</tr>
+				</thead>
 
-				<tr>
-					<td>1 January</td>
-				</tr>
+				<tbody>
+					<tr>
+						<td>1 January</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
 
-				<tr>
-					<td>2 February</td>
-					<td>18 Sun</td>
-					<td>5:00 PM</td>
-					<td>21 Wed</td>
-					<td>1:00 PM</td>
-					<td>1</td>
-					<td><a href="http://www.aieaworld.org/2018-annual-conference">AIEA</a></td>
-					<td>Washington</td>
-					<td>DC</td>
-					<td>USA</td>
-					<td>JW Marriott</td>
-					<td>JW Marriott</td>
-					<td>who knows</td>
-					<td>September 5 2017</td>
-					<td></td>
-				</tr>
+					<tr>
+						<td>2 February</td>
+						<td>18 Sun
+							<br>
+						5:00 PM</td>
+						<td>21 Wed
+							<br>
+						1:00 PM</td>
+						<td>1</td>
+						<td><a href="http://www.aieaworld.org/2018-annual-conference">AIEA</a></td>
+						<td>Washington</td>
+						<td>DC</td>
+						<td>USA</td>
+						<td>JW Marriott</td>
+						<td>JW Marriott</td>
+						<td>who knows</td>
+						<td>September 5 2017</td>
+						<td>January 20-23</td>
+						<td>San Francisco, CA</td>
+					</tr>
 
-				<tr>
-					<td>3 March</td>
-					<td>21 Wed</td>
-					<td>8:00 AM</td>
-					<td>23 Fri</td>
-					<td>5:00 PM</td>
-					<td>2</td>
-					<td><a href="https://forumea.org/training-events/annual-conference/general-info-2/">The Forum on Education Abroad</a></td>
-					<td>Boston</td>
-					<td>MA</td>
-					<td>USA</td>
-					<td>some hotel</td>
-					<td>the same hotel</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
+					<tr>
+						<td>3 March</td>
+						<td>21 Wed
+							<br>
+						8:00 AM</td>
+						<td>23 Fri
+							<br>
+						5:00 PM</td>
+						<td>2</td>
+						<td><a href="https://forumea.org/training-events/annual-conference/general-info-2/">The Forum on Education Abroad</a></td>
+						<td>Boston</td>
+						<td>MA</td>
+						<td>USA</td>
+						<td>some hotel</td>
+						<td>the same hotel</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
 
-				<tr>
-					<td>3 March</td>
-					<td>25 Sun</td>
-					<td>8:00 AM</td>
-					<td>29 Thurs</td>
-					<td>5:00 PM</td>
-					<td>3</td>
-					<td><a href="https://www.apaie2018.org/">APAIE</a></td>
-					<td>Singapore</td>
-					<td></td>
-					<td>Singapore</td>
-					<td>some hotel</td>
-					<td>various</td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
+					<tr>
+						<td>3 March</td>
+						<td>25 Sun
+							<br>
+							8:00 AM</td>
+						<td>29 Thurs
+							<br>
+							5:00 PM</td>
+						<td>3</td>
+						<td><a href="https://www.apaie2018.org/">APAIE</a></td>
+						<td>Singapore</td>
+						<td></td>
+						<td>Singapore</td>
+						<td>some hotel</td>
+						<td>various</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
 
-				<tr>
-					<td>4 April</td>
-					<td></td>
-					<td>8:00 AM</td>
-					<td></td>
-					<td>5:00 PM</td>
-					<td>#</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
+					<tr>
+						<td>4 April</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
 
-				<tr>
-					<td>5 May</td>
-					<td>27 Mon</td>
-					<td>5:00 PM</td>
-					<td>1 Fri June</td>
-					<td>2:00 PM</td>
-					<td>4</td>
-					<td><a href="http://www.nafsa.org/Annual_Conference/Annual_Conference___Expo/">NAFSA Annual Conference</a></td>
-					<td>Philadelphia</td>
-					<td>PA</td>
-					<td>USA</td>
-					<td>Philadephia Convention Center</td>
-					<td>Various</td>
-					<td>April 15 2018</td>
-					<td>August 1 2018</td>
-					<td>Yes</td>
-				</tr>
+					<tr>
+						<td>5 May</td>
+						<td>27 Mon
+							<br>
+							5:00 PM</td>
+						<td>1 Fri June
+							<br>
+							2:00 PM</td>
+						<td>4</td>
+						<td><a href="http://www.nafsa.org/Annual_Conference/Annual_Conference___Expo/">NAFSA Annual Conference</a></td>
+						<td>Philadelphia</td>
+						<td>PA</td>
+						<td>USA</td>
+						<td>Philadephia Convention Center</td>
+						<td>Various</td>
+						<td>April 15 2018</td>
+						<td>August 1 2018</td>
+						<td>May 26-31</td>
+						<td>Washington, DC</td>
+					</tr>
 
-				<tr>
-					<td>6 June</td>
-					<td></td>
-					<td>8:00 AM</td>
-					<td></td>
-					<td>5:00 PM</td>
-					<td>#</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<tr>
+						<td>6 June</td>
+						<td>
+							<br>
+								</td>
+						<td>
+							<br>
+								</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
 
-				</tr>
+					<tr>
+						<td>7 July</td>
+						<td>
+							<br>
+								</td>
+						<td>
+							<br>
+								</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
 
-				<tr>
-					<td>7 July</td>
-					<td></td>
-					<td>8:00 AM</td>
-					<td></td>
-					<td>5:00 PM</td>
-					<td>#</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
+					<tr>
+						<td>8 August</td>
+						<td>
+							<br>
+								</td>
+						<td>
+							<br>
+								</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
 
-				<tr>
-					<td>8 August</td>
-					<td></td>
-					<td>8:00 AM</td>
-					<td></td>
-					<td>5:00 PM</td>
-					<td>#</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
+					<tr>
+						<td>9 September</td>
+						<td>11 Tues
+							<br>
+							8:00 AM</td>
+						<td>14 Fri
+							<br>
+							5:00 PM</td>
+						<td>5</td>
+						<td><a href="https://www.eaie.org/geneva.html">EAIE</a></td>
+						<td>Geneva</td>
+						<td></td>
+						<td>Switzerland</td>
+						<td>Someplace</td>
+						<td>various hotels</td>
+						<td>June 1 2018</td>
+						<td>Feb 1 2018</td>
+						<td></td>
+						<td>somewhere in Europe</td>
+					</tr>
 
-				<tr>
-					<td>9 September</td>
-					<td>11 Tues</td>
-					<td>8:00 AM</td>
-					<td>14 Fri</td>
-					<td>5:00 PM</td>
-					<td>5</td>
-					<td><a href="https://www.eaie.org/geneva.html">EAIE</a></td>
-					<td>Geneva</td>
-					<td></td>
-					<td>Switzerland</td>
-					<td>Someplace</td>
-					<td>various hotels</td>
-					<td>June 1 2018</td>
-					<td>Feb 1 2018</td>
-					<td></td>
-				</tr>
+					<tr>
+						<td>10 October</td>
+						<td>9 Tues
+							<br>
+							6:00 PM</td>
+						<td>12 Fri
+							<br>
+							4:00 PM</td>
+						<td>6</td>
+						<td><a href="http://aiec.idp.com/home">AIEC</a></td>
+						<td>Sydney</td>
+						<td>NSW</td>
+						<td>Australia</td>
+						<td>Sydney Convention Center</td>
+						<td>Various-list avail mid-May 2018</td>
+						<td>opens 1 June</td>
+						<td>Closed</td>
+						<td></td>
+						<td></td>
+					</tr>
 
-				<tr>
-					<td>10 October</td>
-					<td>17 Wed</td>
-					<td>6:00 PM</td>
-					<td>19 Fri</td>
-					<td>4:00 PM</td>
-					<td>6</td>
-					<td><a href="https://forumea.org/training-events/european-conference/general-info-2/">The Forum on Education Abroad European Conference</a></td>
-					<td>Prague</td>
-					<td></td>
-					<td>Czech Republic</td>
-					<td>Zofin Palace</td>
-					<td>Open</td>
-					<td>June 29 2018</td>
-					<td>Closed</td>
-					<td></td>
-				</tr>
+					<tr>
+						<td>10 October</td>
+						<td>17 Wed
+							<br>
+							6:00 PM</td>
+						<td>19 Fri
+							<br>
+							4:00 PM</td>
+						<td>7</td>
+						<td><a href="https://forumea.org/training-events/european-conference/general-info-2/">The Forum on Education Abroad European Conference</a></td>
+						<td>Prague</td>
+						<td></td>
+						<td>Czech Republic</td>
+						<td>Zofin Palace</td>
+						<td>Open</td>
+						<td>June 29 2018</td>
+						<td>Closed</td>
+						<td></td>
+						<td></td>
+					</tr>
 
-				<tr>
-					<td>11 November</td>
-					<td>18 Sun</td>
-					<td>5:30 PM</td>
-					<td>21 Wed</td>
-					<td>3:00 PM</td>
-					<td>7</td>
-					<td><a href="https://cbie.ca/upcoming-events/cbie-2018/">CBIE</a></td>
-					<td>Ottawa</td>
-					<td>ON</td>
-					<td>Canada</td>
-					<td>NA</td>
-					<td>NA</td>
-					<td>NA</td>
-					<td>April 13 2018</td>
-					<td>Yes</td>
-				</tr>
+					<tr>
+						<td>11 November</td>
+						<td>18 Sun
+							<br>
+							5:30 PM</td>
+						<td>21 Wed
+							<br>
+							3:00 PM</td>
+						<td>8</td>
+						<td><a href="https://cbie.ca/upcoming-events/cbie-2018/">CBIE</a></td>
+						<td>Ottawa</td>
+						<td>ON</td>
+						<td>Canada</td>
+						<td>NA</td>
+						<td>NA</td>
+						<td>NA</td>
+						<td>April 13 2018</td>
+						<td>Yes</td>
+						<td>somewhere in Canada</td>
+					</tr>
 
-				<tr>
-					<td>12 December</td>
-					<td></td>
-					<td>8:00 AM</td>
-					<td></td>
-					<td>5:00 PM</td>
-					<td>#</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-
+					<tr>
+						<td>12 December</td>
+						<td>5 Wed
+							<br>
+								</td>
+						<td>8 Sat
+							<br>
+								</td>
+						<td>9</td>
+						<td><a href="https://www.airc-education.org/annual-conference">AIRC</a></td>
+						<td>Weston</td>
+						<td>FL</td>
+						<td>USA</td>
+						<td>Bonaventure Resort</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
 			</table>
+
+			<table>
 				<tr>
 					<th>Abbreviations</th>
 					<th></th>
@@ -313,15 +453,10 @@
 					<td>Conference offers a range of accommodation options with conference rates</td>
 				</tr>
 
+			</table>
 		</section>
 
-		<div>
-			<table>
 
-			</table>
-
-
-		</div>
 
 <!-- JS files here-->
 
@@ -329,6 +464,8 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
 
 		<script src="javascript/app.js"></script>
 

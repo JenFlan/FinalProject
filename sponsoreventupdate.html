@@ -6,11 +6,16 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+		<link rel="stylesheet" href="styles/reset.css">
+
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
 		<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.0/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-kCsv8pSAWtRge/+zcLDeqwoWhTQSUX2esQPYOsocgrg1eMj7T2wrTJP348T3mpBU" crossorigin="anonymous">
 
 		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
 		<link rel="stylesheet" type="text/css" href="styles/app.css">
 	</head>
@@ -38,10 +43,10 @@
 		        <a class="nav-link" href="travelplanner.html">Travel Planner</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Training</a>
+		        <a class="nav-link" href="training.html">Training</a>
 		      </li>
 		       <li class="nav-item">
-		        <a class="nav-link" href="#">Community</a>
+		        <a class="nav-link" href="community.html">Community</a>
 		      </li>
 		    </ul>
 		    <form class="form-inline my-2 my-lg-0">
@@ -53,30 +58,115 @@
 
 	</header>
 
-	<div class="eventupdateform">
-		<h1>Thanks for updating your information. If you have questions, please contact events@levelup.com </h1>
 
+	<div id="ex1" class="modal">
+
+	  	<form>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Email address</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+		    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Password</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		  </div>
+		  <div class="form-check">
+		    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+		    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+		  </div>
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+
+	  <a href="#" rel="modal:close">Close</a>
+	</div>
+
+	<p><a href="#ex1" rel="modal:open">This page requires login</a></p>
+
+
+
+
+
+		<div class="eventformtitle">
+			<h1>Thanks for updating your information. If you have questions, please contact events@levelup.com </h1>
+		</div>
 	
+
+		<div class="eventupdateform">
 			<form action="/action_page.php">
 				  <fieldset>
 				    <legend>Event Update Form</legend>
 				    Event Name:<br>
-				    <input type="text" name="tripname">
-				    <br>
-				    Start Date:<br>
-				    <input type="text" name="startdate">
-				    <br>
-				    End Date:<br>
-				    <input type="text" name="enddate">
-				    Year:<br>
-				    <select name="conferencename">
+				    <select name = "eventname">
+				    	<option value="AIEA">AIEA</option>
+				    	<option value="AIEC">AIEC</option>
+				    	<option value="AIRC">AIRC</option>
+				    	<option value="APAIE">APAIE</option>
+				    	<option value="CBIE">CBIE</option>
+				    	<option value="EAIE">EAIE</option>
+				    	<option value="FORUM-US">The Forum on Education Abroad (Europe)</option>
+				    	<option value="FORUM-Europe">The Forum on Education Abroad (US)</option>
+				    	<option value="NAFSA">NAFSA</option>
+
+					</select> 
+					<br>
+    				Year:<br>
+				    <select name="eventyear">
 				    	<option value="2018">2018</option>
 				    	<option value="2019">2019</option>
 				    	<option value="2020">2020</option>
 				    </select>
-				    <br><br>
+				    <br>
+				    Start Date:<br>
+				    <input type="text" name="eventstartdate">
+				    <br>
+				    End Date:<br>
+				    <input type="text" name="eventenddate">
+				    <br>
+				    Conference City:<br>
+				    <input type="text" name="eventcity">
+				    <br>
+				    State/Province:<br>
+				    <input type="text" name="eventstateprov">
+				    <br>
+				    Country:<br>
+				    <input type="text" name="eventcountry">
+				    <br>
+				   	Venue:<br>
+				    <input type="text" name="eventvenue">
+				    <br>
+				    Accommodation:<br>
+				    <input type="text" name="eventaccommod">
+				    <br>
+				    Early Registration Deadline:<br>
+				    <input type="text" name="eventearlyreg">
+				    <br>
+				    Proposal Deadline:<br>
+				    <input type="text" name="eventpropdead">
+				    <br>
+				    Your Name:<br>
+				    <input type="text" name="eventorganizername">
+				    <br>
+				    Title and Employer:<br>
+				    <input type="text" name="eventorganizeremploy">
+				    <br>
+				    Phone incl country code:<br>
+				    <input type="text" name="eventorganizerphone">
+				    <br>
+				    Email:<br>
+				    <input type="text" name="eventorganizeremail">
+				    <br>
+				    Role Related to this event:<br>
+				    <input type="text" name="eventorganizerrole">
+				    <br>
+				    <br>
 				    <input type="submit" value="Submit">
 				  </fieldset>
+
+				  <div>
+			    	<button class="btn btn-primary js-goconfhub">Submit</button>
+			    </div>
 			</form>
 
 
@@ -94,6 +184,8 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 		<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
 		<script src="javascript/app.js"></script>
 

@@ -2,9 +2,6 @@ body {
 	padding: 30px;
 }
 
-.full {
-	padding: 0px;
-}
 
 .jumbotron-container {
 	background-image: url(../assets/world-collage-1400x500.png);	
@@ -18,12 +15,56 @@ body {
 }
 
 .jumbotron h1.display-4 {
-	color: red;
+	color: ;
 }
 
 .jumbotron p.lead {
-	color: red;
+	color: ;
 }
+
+.bodycon-title {
+	font-size: 36px;
+}
+
+.bodycon-subtitle {
+	font-size: 24px;
+	font-style: italic;
+}
+
+
+.card-container {
+	display: flex;
+	box-sizing: border-box;
+	padding: 0px;
+}
+
+
+.cardsingle {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	box-sizing: border-box;
+}
+
+
+.card-teal {
+	background-color: #20c997;
+}
+
+.card-red {
+	background-color: #E74C3C;
+}
+
+.card-orange {
+	background-color: #F39C12;
+}
+
+.card-blue {
+	background-color: #3498DB;
+}
+
+
+/*conference hub 2018*/
 
 .confremindcontain {
 	color: red;
@@ -32,13 +73,52 @@ body {
 	padding: 10px 20px 20px 40px;
 }
 
+/* for conf hub with modal*/
+.confremindcontainbtngroup {
+	display: flex;
+	box-sizing: border-box;
+	padding: 10px 0px;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+.confremindbtntext {
+	display: flex;
+	color: #F39C12;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.confremindbtn {
+	display: flex;
+}
+
+.sponsorupdatecontainbtngroup {
+	display: flex;
+	box-sizing: border-box;
+	padding: 10px 0px;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.sponsupdatebtntext {
+	display: flex;
+	color: #3498DB;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.sponsupdatebtnb {
+	display: flex;
+}
+
+
+/* end conf hub modal*/
+
 .confremindform {
 
 }
 
-.confremindbtn {
 
-}
 
 .hidden {
 	display: none;
@@ -51,25 +131,48 @@ body {
 	padding: 10px 20px 20px 40px;
 }
 
-.card-container {
-	display: flex;
-	box-sizing: border-box;
-	padding: 20px;
+
+.pagetitle-teal {
+	color: #20c997;
+}
+
+.confhubtablecontain {
+	padding: 10px;
+	border: 3px solid black;
+}
+
+
+/*event sponsor form */
+
+.eventformtitle {
+
+	font-size: 12px;
+	background-color: #fff;
+}
+
+/* travel planner page*/
+
+.pagetitle-red {
+	color: #E74C3C;
+}
+
+
+/*training page*/
+
+.pagetitle-orange {
+	color: #F39C12;
+}
+
+
+/*community page*/
+
+.pagetitle-blue {
+	color: #3498DB;
 }
 
 
 
-
-
-.card {
-	display: flex;
-	flex-direction: column;
-	width: 25%;
-	box-sizing: border-box;
-}
-
-
-
+/*
 From Courtney Hoskins to Everyone: (09:00 AM)
 body .jumbotron-container .jumbotron .container h1.display-4 {
 From Courtney Hoskins to Everyone: (09:38 AM)
@@ -77,5 +180,5 @@ div class="bootswatch-column"
 div class="bootswatch-column purple"
 .bootswatch-column.purple {
 
-/*	padding: 20px; */
+	padding: 20px; */
 

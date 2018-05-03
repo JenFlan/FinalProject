@@ -27,7 +27,7 @@
 
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-		  <a class="navbar-brand" href="#">Navbar</a>
+		  <a class="navbar-brand" href="index.html">LevelUp for IE</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -61,47 +61,75 @@
 
 	<section>
 
-		<div class="confremindcontain"> Sign up for important conference reminders.
-
-			<button type="button" class="btn btn-warning js-confremindbtn">Remind Me</button>
-
-			<form class="js-confremindform hidden">
-			  <fieldset>
-
-			    <div class="form-group">
-			      <label for="exampleInputEmail1">Email address</label>
-			      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-			      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-			    </div>
-
-			    <div class="form-group">
-			      <label for="exampleSelect2">Select which conferences for updates</label>
-			      <select multiple="" class="form-control" id="exampleSelect2">
-			        <option>AIEA</option>
-			        <option>AIEC</option>
-			        <option>AIRC</option>
-			        <option>APAIE</option>
-			        <option>CBIE</option>
-			        <option>EAIE</option>
-			        <option>The Forum on Education Abroad (Europe)</option>
-			        <option>The Forum on Education Abroad (US)</option>
-			        <option>NAFSA</option>
-			      </select>
-			    </div>
+		
 
 
-			     <div class="form-group">
-			    	<button class="btn btn-primary js-submitremind">Submit</button>
-			    </div>
-			 </form>
+
+<!--modal to open conf reminder email form-->
+
+			<div id="ex1" class="modal">
+
+				<form class="js-confremindform hidden">
+				  <fieldset>
+				    <div class="form-group">
+				      <label for="exampleInputEmail1">Email address</label>
+				      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				    </div>
+				    <div class="form-group">
+				      <label for="exampleSelect2">Select which conferences for updates</label>
+				      <select multiple="" class="form-control" id="exampleSelect2">
+				        <option>AIEA</option>
+				        <option>AIEC</option>
+				        <option>AIRC</option>
+				        <option>APAIE</option>
+				        <option>CBIE</option>
+				        <option>EAIE</option>
+				        <option>The Forum on Education Abroad (Europe)</option>
+				        <option>The Forum on Education Abroad (US)</option>
+				        <option>NAFSA</option>
+				      </select>
+				    </div>
+
+				     <div class="form-group">
+				    	<button class="btn btn-primary js-submitremind">Submit</button>
+				    </div>
+				 </form>
+
+			  <a href="#" rel="modal:close">Close</a>
+			</div>
+
+
+		<div class="confremindcontainbtngroup">
+		 <div class="confremindbtntext">
+		 	Sign up for important conference reminders.
+		 </div>
+
+		 <div class="confremindbtn">
+			<p><a href="#ex1" rel="modal:open"><button type="button" class="btn btn-warning js-confremindbtn">Remind Me</button></a></p>
+		</div>
+
 		</div>
 
 	
-		<div class="sponsorupdate">
-			Need to update your organization's event details?
-			<button type="button" class="btn btn-info js-sponsorupdatebtn">Sponsor Update</button>
+		<div class="sponsorupdatecontainbtngroup">
+			<div class="sponsupdatebtntext"> Need to update your organization's event details?
+			</div>
+			
+			<div class="sponsupdatebtnb">
+				<a href="sponsoreventupdate.html" class="btn btn-info">Sponsor Update</a>
+			</div>
 
+			<!--
+			<div class="sponsupdatebtnb">
+				<button type="button" class="btn btn-info js-sponsorupdatebtn">Sponsor Update</button>
+			</div>
+		-->
+<!--			
+<a href="sponsoreventupdate.html" class="btn btn-primary">Go here</a>
 
+<button type="button" class="btn btn-info">Sponsor Update</button>
+-->
 		</div>
 
 
@@ -121,7 +149,7 @@
 						<th>Point on Map</th>
 						<th>Conference Name</th>
 						<th>City</th>
-						<th>State/Province</th>
+						<th>State/ Province</th>
 						<th>Country</th>
 						<th>Conference Venue</th>
 						<th>Accommodation</th>
@@ -463,3 +491,8 @@
 		
 	</body>
 </html>
+
+
+
+
+

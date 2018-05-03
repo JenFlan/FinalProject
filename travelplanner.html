@@ -21,67 +21,61 @@
 	<body>
 
 		<header class="full">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-		  <a class="navbar-brand" href="#">Navbar</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+			  <a class="navbar-brand" href="index.html">LevelUp for IE</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
 
-		  <div class="collapse navbar-collapse" id="navbarColor01">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="conferencehub2018.html">Conference Hub</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="travelplanner.html">Travel Planner</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="training.html">Training</a>
-		      </li>
-		       <li class="nav-item">
-		        <a class="nav-link" href="community.html">Community</a>
-		      </li>
-		    </ul>
-		    <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-		      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-		    </form><!-- form-inline my-2 my-lg-0 -->
-		  </div>
-		</nav>
+			  <div class="collapse navbar-collapse" id="navbarColor01">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="conferencehub2018.html">Conference Hub</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="travelplanner.html">Travel Planner</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="training.html">Training</a>
+			      </li>
+			       <li class="nav-item">
+			        <a class="nav-link" href="community.html">Community</a>
+			      </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0">
+			      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+			      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+			    </form><!-- form-inline my-2 my-lg-0 -->
+			  </div>
+			</nav>
 
-	</header>
+		</header>
 
-	<div class="pagetitle-red">
+		
+		<div class="pagetitle-red">
 			<h1>Travel Planner</h1>
 		</div>
 
-	
-<p>The Travel Planner makes trip planning for international educators easy. worldwide to easily map travel, track important details about each portion of the trip, find helpful tools for evaluating your visits, and easily create trip reports.</p>
-		<p></p>
-		<p>Planning and executing a successful site visit, conference trip or visit to a research partner is complicated. A travel agent can book your air ticket, but organizing the many goals, logistics, contact details and meeting agendas takes a lot of work and coordinating the best sequence of cities and dates can take a lot of time.</p>
-		<p>Good planning has been shown to reduce cost by 17% and improve outcomes by 8%. Global Site Visithelps you easily organize your trip to maximize your time, budget, and most importantly, improve the effectiveness of your partnerships.</p>
+		<div class="travelplan-content">
+			<p>The Travel Planner makes trip planning for international educators easy. worldwide to easily map travel, track important details about each portion of the trip, find helpful tools for evaluating your visits, and easily create trip reports.</p>
+			<p></p>
+			<p>Planning and executing a successful site visit, conference trip or visit to a research partner is complicated. A travel agent can book your air ticket, but organizing the many goals, logistics, contact details and meeting agendas takes a lot of work and coordinating the best sequence of cities and dates can take a lot of time.</p>
+			<p>Good planning has been shown to reduce cost by 17% and improve outcomes by 8%. Global Site Visithelps you easily organize your trip to maximize your time, budget, and most importantly, improve the effectiveness of your partnerships.</p>
 
 
-		<p>You can use Global Site Visit for:</p>
-			<ul>
-				<li>Planning travel to conferences and meetings at the conference<li/>
-				<li>Maximize your time abroad by efficiently planning visits to multiple partners and conferences<li/>
-				<li>Measure and report the success of your trips<li/>
-				<li>Helps you gather important details for evaluating the effectiveness of your partnerships<li/>
-				<li>Easily generate your itinerary to give to your travel agent<li/>
-			</ul>
-	</section>
+			<p>You can use Global Site Visit for:</p>
+				<ol>
+					<li>Planning travel to conferences and meetings at the conference<li/>
+					<li>Maximize your time abroad by efficiently planning visits to multiple partners and conferences<li/>
+					<li>Measure and report the success of your trips<li/>
+					<li>Helps you gather important details for evaluating the effectiveness of your partnerships<li/>
+					<li>Easily generate your itinerary to give to your travel agent<li/>
+				</ol>
 
-			<p>Form goes here to enter travel locations into box which then generates map with locations, and lines connecting the journey.</p>
-
-			<p>
-			Has cards or a form for each location entered where user can store information about each location, things to remember like name of institution, department, contact phone number, agreement type, and exchange balance.
-			</p>
-
-			
+		</div>	
 			<form action="/action_page.php">
 				  <fieldset>
 				    <legend>Site Visit Trip Planner</legend>
@@ -93,6 +87,7 @@
 				    <br>
 				    End Date:<br>
 				    <input type="text" name="enddate">
+				    <br>
 				    Conference Attending:<br>
 				    <select name="conferencename">
 				    	<option value="nafsa">NAFSA</option>
@@ -108,12 +103,19 @@
 			</form>
 
 
-
 			</form>
 
+			<div class="mapcontainer">
+				   <h3></h3>
+    			<div id="map">
+    			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu_j82gzPDTOB4kqZI5nnT9fPm4jWHclY&callback=initMap"></script>
 
-			<p>a map should be appearing here but it is not. Boo. :(</p>
-			<div id="map"></div>
+    			</div>
+
+			</div>
+
+
+			
 
 <!-- JS files here-->
 

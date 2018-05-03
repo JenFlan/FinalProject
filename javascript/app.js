@@ -111,23 +111,40 @@ $modalOpen.on('click', e => {
 
 */
 
+/*
+orig map code w uluru as center */
 
-
-
-/* my attempt map
-var map;
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 2,
-    center: new google.maps.LatLng(2.8,-187.3),
-    mapTypeId: 'terrain'
-  }); 
-}
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
 
-$(document).ready( function () {
-    $('#table_id').DataTable();
-} );
-*/
+
+/* edited for melbourne 
+function initMap() {
+        var melbourne = {lat: -37.8274851, lng: 144.9527136};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: melbourne
+        });
+        var marker = new google.maps.Marker({
+          position: melbourne,
+          map: map
+        });
+      }
+  */
+
+
+
+
+
 
 
 
